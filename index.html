@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jonatan Castillo</title>
+   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,900;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/f3c2a5007b.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+   <header class="navbar">
+      <div class="navbar-content">
+         <h2 class="name">Portafolio</h2>
+         <div class="button-menu"></div>
+         <nav class="navbar-list hide">
+            <a class="item-menu selected" data-url="inicio" href="#">Inicio</a>
+            <a class="item-menu" data-url="experiencia" href="#experiencia">Experiencia</a>
+            <a class="item-menu" data-url="proyectos" href="#proyectos">Proyectos</a>
+            <a class="item-menu" data-url="sobre-mi" href="#sobre-mi">Sobre Mí</a>
+            <a class="item-menu" data-url="tecnologias" href="#tecnologias">Tecnologías</a>
+         </nav>
+         <div class="contact-navbar">
+            <a href="#">
+               <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+               <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:albertcasti0919@gmail.com">
+               <i class="fa-solid fa-envelope"></i>
+            </a>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section id="inicio" class="background-balls">
+         <div class="content">
+            <h3>
+               <i>👋</i>
+               ¡Hola!
+            </h3>
+            <hr class="line">
+            <h1><span>Jonatan Castillo</span> - Desarrollador Web</h1>
+            <hr class="line">
+            <p><span>+2 años de experiencia en el desarrollo web.</span> Estudiante de Ingeniería en Sistemas</p>
+            <div class="contact-responsive">
+                  <a href="#">
+                     <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                     <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="mailto:albertcasti0919@gmail.com">
+                     <i class="fa-solid fa-envelope"></i>
+                  </a>
+            </div>
+            
+            <a href="#experiencia" class="experiencia">
+               Ver más<i class="fas fa-arrow-down"></i>
+            </a>
+         </div>
+      </section>
+      <!-- EXPERIENCIA -->
+      <section id="experiencia" class="section-container">
+         <h2>
+            <i class="fas fa-briefcase"></i>
+            Experiencia
+         </h2>
+         <ul>
+            <li class="experiencia-item">
+               <article>
+                  <div class="encabezado-article">
+                     <div class="experiencia-icon">
+                        <i class="fas fa-calendar-check"></i>
+                     </div>
+                     <div class="titulo">
+                        <h3>Analista Programador - <span class="empresa">Ministerio de Salud Pública</span></h3>
+                        <p class="experiencia-date">Enero 2022 - Presente</p>
+                     </div>
+                  </div>
+                  <p class="experiencia-description">
+                     Encargado del mantenimiento de sistemas internos mediante el uso de tecnologías como Angular,
+                     Node.js, PHP, HTML, CSS, jQuery, SQL Server, MySQL y Oracle Apex.
+                     Participo en la toma de requerimientos de usuarios para el desarrollo de nuevas funcionalidades
+                     y del diseño de la estructura de bases de datos para optimizar el rendimiento y escalabilidad de
+                     los sistemas.
+                  </p>
+               </article>
+            </li>
+            <li class="experiencia-item">
+               <article>
+                  <div class="encabezado-article">
+                     <div class="experiencia-icon">
+                        <i class="fas fa-calendar-check"></i>
+                     </div>
+                     <div class="titulo">
+                        <h3>Programador FullStack - <span class="empresa">GuateGeek</span></h3>
+                        <p class="experiencia-date">Junio 2021 - Diciembre 2021</p>
+                     </div>
+                  </div>
+                  <p class="experiencia-description">
+                     En mi rol, fui responsable de brindar mantenimiento y desarrollar nuevas funcionalidades
+                     para sistemas basados en PHP, así como participar activamente en la creación de una red
+                     social interna desarrollada en Flutter, destinada al seguimiento de talleres dentro de la
+                     empresa.
+                  </p>
+               </article>
+            </li>
+         </ul>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="section-container">
+         <h2>
+            <i class="fas fa-laptop-code"></i>
+            Proyectos
+         </h2>
+         <article class="project">
+            <h2 class="title-movil">Clon de Spotify</h2>
+            <div class="img">
+               <img src="./assets/img/spotify_clone_screen.png" alt="Clon Spotify" loading="lazy">
+            </div>
+            <div class="project-content">
+               <div class="header">
+                  <h2>Clon de Spotify</h2>
+                  <div class="technologies">
+                     <span>
+                        <img src="./assets/img/typeScript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
+                        TypeScript
+                     </span>
+                     <span>
+                        <img src="./assets/img/angular.svg" alt="Angular" title="angular" loading="lazy">
+                        Angular
+                     </span>
+                  </div>
+               </div>
+               <p class="project-description">
+                  Aplicación de música desarrollada en Angular que replica las
+                  funcionalidades básicas de Spotify. Permite explorar canciones y reproducirlas.
+               </p>
+               <div class="buttons">
+                  <a href="#">
+                     <i class="fab fa-github"></i>
+                     Código
+                  </a>
+               </div>
+            </div>
+         </article>
+         <article class="project">
+            <h2 class="title-movil">Chat Web</h2>
+            <div class="img">
+               <img src="./assets/img/chat_screen.png" alt="Chat web" title="Imagen Chat" loading="lazy">
+            </div>
+            <div class="project-content">
+               <div class="header">
+                  <h2>Chat Web</h2>
+                  <div class="technologies">
+                     <span>
+                        <img src="./assets/img/typeScript.svg" alt="TypeScript" title="TypeScript" loading="lazy">
+                        TypeScript
+                     </span>
+                     <span>
+                        <img src="./assets/img/angular.svg" alt="Angular" title="angular" loading="lazy">
+                        Angular
+                     </span>
+                     <span>
+                        <img src="./assets/img/node.svg" alt="Node JS" title="Nodejs" loading="lazy">
+                        Nodejs
+                     </span>
+                     <span>
+                        <img src="./assets/img/mysql.svg" alt="Mysql" title="Mysql" loading="lazy">
+                        Mysql
+                     </span>
+                  </div>
+               </div>
+               <p class="project-description">
+                  Aplicación de chat en tiempo real creada con Angular para el frontend, Node.js para el backend
+                  y MySQL como base de datos. Permite a los usuarios registrarse, iniciar sesión y participar en
+                  conversaciones en salas de chat.
+               </p>
+               <div class="buttons">
+                  <a href="#">
+                     <i class="fab fa-github"></i>
+                     Código
+                  </a>
+               </div>
+            </div>
+         </article>
+         <article class="project">
+            <h2 class="title-movil">Juego de memoria</h2>
+            <div class="img">
+               <img src="./assets/img/memoria_screen.png" alt="Juego de Memoria" title="Juego de memoria"
+                  loading="lazy">
+            </div>
+            <div class="project-content">
+               <div class="header">
+                  <h2>Juego de Memoria</h2>
+                  <div class="technologies">
+                     <span>
+                        <img src="./assets/img/html.svg" alt="Html" title="Html" loading="lazy">
+                        Html
+                     </span>
+                     <span>
+                        <img src="./assets/img/css.svg" alt="Css" title="Css" loading="lazy">
+                        Css
+                     </span>
+                     <span>
+                        <img src="./assets/img/javascript.svg" alt="JavaScript" title="javascript" loading="lazy">
+                        JavaScript
+                     </span>
+                  </div>
+               </div>
+               <p class="project-description">
+                  Juego de memoria interactivo desarrollado con HTML, CSS y JavaScript. El objetivo es encontrar todos
+                  los
+                  pares de tarjetas iguales antes de que se agote el tiempo.
+               </p>
+               <div class="buttons">
+                  <a href="#">
+                     <i class="fab fa-github"></i>
+                     Código
+                  </a>
+                  <a href="#">
+                     <i class="fas fa-link"></i>
+                     Ver
+                  </a>
+               </div>
+            </div>
+         </article>
+         <article class="project">
+            <h2 class="title-movil">Landing Page para Cafetería</h2>
+            <div class="img">
+               <img src="./assets/img/page_cafeteria_screen.png" alt="Juego de Memoria" title="Juego de memoria"
+                  loading="lazy">
+            </div>
+            <div class="project-content">
+               <div class="header">
+                  <h2>Landing Page para Cafetería</h2>
+                  <div class="technologies">
+                     <span>
+                        <img src="./assets/img/html.svg" alt="Html" title="Html" loading="lazy">
+                        Html
+                     </span>
+                     <span>
+                        <img src="./assets/img/css.svg" alt="Css" title="Css" loading="lazy">
+                        Css
+                     </span>
+                  </div>
+               </div>
+               <p class="project-description">
+                  Plantilla de landing page moderna y atractiva diseñada para cafeterías. Secciones para
+                  mostrar los cafés destacados de la cafetería y mostrar el menú completo. Boton para contactar
+                  a la cafetería por medio de Whatsapp.
+               </p>
+               <div class="buttons">
+                  <a href="#">
+                     <i class="fab fa-github"></i>
+                     Código
+                  </a>
+                  <a href="#">
+                     <i class="fas fa-link"></i>
+                     Ver
+                  </a>
+               </div>
+            </div>
+         </article>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="section-container">
+         <h2>
+            <i class="fas fa-user-check"></i>
+            Sobre mí
+         </h2>
+         <article class="about_me_content">
+            <div class="avatar">
+               <img src="./assets/img/avatar.png" alt="Avatar Jonatan Castillo" title="Jonatan Castillo">
+            </div>
+            <div class="about_me">
+               <p>
+                  ¡Hola 👋! Soy <span class="orange">Jonatan Castillo</span>, Soy un desarrollador
+                  <span>web full-stack y estudiante de Ingeniería,</span> apasionado
+                  por crear soluciones eficientes y funcionales para la web. Con experiencia en tecnologías frontend y
+                  backend.
+               </p>
+               <p>Mi enfoque está en construir aplicaciones robustas, escalables y orientadas a la experiencia del
+                  usuario,
+                  mientras continuo <span>aprendiendo y perfeccionando mis habilidades en el desarrollo web.</span></p>
+               <p>
+                  Estoy en busca de <span class="orange">oportunidades</span> donde pueda crecer profesionalmente,
+                  aportar valor con mi pasión por la tecnología,
+                  <span>expandir mis conocimientos, colaborar con equipos de desarrollo</span> y contribuir al éxito de
+                  proyectos innovadores.
+               </p>
+
+               <div class="about_me_btn">
+                  <a href="#">
+                     <i class="fas fa-file-pdf"></i>
+                     CV
+                  </a>
+                  <a href="#">
+                     <i class="fa-brands fa-linkedin"></i>
+                     LinkedIn
+                  </a>
+                  <a href="#">
+                     <i class="fa-brands fa-github"></i>
+                     Github
+                  </a>
+               </div>
+            </div>
+         </article>
+      </section>
+
+      <!-- TECNOLOGÍAS -->
+      <section id="tecnologias" class="section-container">
+         <h2>
+            <i class="fas fa-tools"></i>
+            Tecnologías
+         </h2>
+
+         <div class="cards">
+            <div class="card card1">
+               <h2 class="title-card frontend">Frontend</h2>
+               <div class="item-container">
+                  <div class="item">
+                     <img src="./assets/img/html.svg" alt="Html" title="Html">
+                     <h6>HTML</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/css.svg" alt="css" title="CSS">
+                     <h6>CSS</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/javascript.svg" alt="JavaScript" title="JavaScript">
+                     <h6>JavaScript</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+                     <h6>Bootstrap</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/angular.svg" alt="Angular" title="Angular">
+                     <h6>Angular</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/typeScript.svg" alt="TypeScript" title="TypeScript">
+                     <h6>TypeScript</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/flutter.svg" alt="Flutter" title="Flutter">
+                     <h6>Flutter</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card card2">
+               <h2 class="title-card backend">Backend</h2>
+               <div class="item-container">
+                  <div class="item">
+                     <img src="./assets/img/php.svg" class="background-black" alt="PHP" title="PHP">
+                     <h6>PHP</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/node.svg" alt="Nodejs" title="Nodejs">
+                     <h6>Nodejs</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/mysql.svg" alt="MySQL" title="Mysql">
+                     <h6>MySQL</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/expresjs.svg" class="background-black" alt="expresjs" title="expresjs">
+                     <h6>ExpresJS</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/sqlserver.svg" alt="SqlServer" title="SqlServer">
+                     <h6>SqlServer</h6>
+                  </div>
+               </div>
+            </div>
+
+            <div class="card card3">
+               <h2 class="title-card tools">Herramientas</h2>
+               <div class="item-container">
+                  <div class="item">
+                     <img src="./assets/img/git.svg" alt="Git" title="Git">
+                     <h6>Git</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/github.svg" class="background-black" alt="Github" title="Github">
+                     <h6>Github</h6>
+                  </div>
+                  <div class="item">
+                     <img src="./assets/img/vsc.svg" alt="VSC" title="VSC">
+                     <h6>Visual Studio Code</h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+      </section>
+   </main>
+   <footer>
+      <div class="card">
+         <a href="#inicio">Inicio</a>
+         <div class="contact-container">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#" class="contact">Contáctame</a>
+         </div>
+      </div>
+   </footer>
+
+</body>
+<script src="./js/background.js"></script>
+<script src="./js/menu.js"></script>
+
+</html>
