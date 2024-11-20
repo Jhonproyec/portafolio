@@ -126,6 +126,10 @@ section {
         z-index: 10;
     }
 }
+/* .background-balls{
+    height: 100vh;
+    display: flex;
+} */
 
 .content {
     margin: 100px auto;
