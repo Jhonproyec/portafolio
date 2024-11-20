@@ -1,3 +1,8 @@
+window.addEventListener('scroll', function(){
+	const menu = document.querySelector('header');
+	menu.classList.toggle('cambio', scrollY > 0);
+})
+
 //INDICADOR DEL MENÚ
 let sections = document.querySelectorAll('section');
 let menuItem = document.querySelectorAll('.item-menu');
@@ -38,6 +43,7 @@ const itemMenu = document.querySelectorAll('.item-menu');
 menubtn.addEventListener('click', function(){
     this.classList.toggle('closeMenu');
     menu.classList.toggle('show');
+    menu.classList.toggle('close')
     itemMenu.forEach(item => {
         item.addEventListener('click',function() {
             menu.classList.remove('show');

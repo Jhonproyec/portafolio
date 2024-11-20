@@ -163,6 +163,11 @@
 
 
 @media screen and (max-width: 490px) {
+    .background-balls .experiencia{
+        width: 130px;
+        font-size: 14px;
+    }
+
     main .section-container h2{
         font-size: 28px;
     }
@@ -237,4 +242,7 @@
         gap: 10px;
     }
     
+    footer {
+        padding: 0px 20px;
+    }
 }
