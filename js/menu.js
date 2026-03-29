@@ -21,14 +21,33 @@ const functionObserver = entries => {
     });
 };
 
-const observer = new IntersectionObserver(functionObserver,{
-    root: null, 
-    rootMargin: '-5px',
-    threshold: 0.3
-})
+function initObserver() {
+  const sections = document.querySelectorAll('section');
 
-sections.forEach(section => observer.observe(section));
+  function updateActiveMenu() {
+    const scrollY = window.scrollY;
 
+    let current = null;
+    sections.forEach(section => {
+      const top    = section.offsetTop - 100;
+      const bottom = top + section.offsetHeight;
+      if (scrollY >= top && scrollY < bottom) {
+        current = section.id;
+      }
+    });
+
+    if (!current) return;
+
+    menuItem.forEach(item => {
+      item.classList.toggle('selected', item.dataset.url === current);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveMenu);
+  updateActiveMenu(); // ejecutar al cargar para marcar la sección inicial
+}
+
+document.addEventListener('proyectosListos', initObserver);
 
 
 

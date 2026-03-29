@@ -22,9 +22,16 @@
     footer {
         padding: 20px;
     }
+
+    .img-mosaic{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    .img-mosaic{
+        width: 100% !important;
+    }
 
     .background-balls .content {
         margin: 80px 0px;
